@@ -52,7 +52,7 @@ fn execute_line(input: &str) {
 }
 
 /// Разбивает строку на аргументы, учитывая двойные кавычки
-pub fn parse_arguments(input: &str) -> Result<Vec<String>, &'static str> {
+fn parse_arguments(input: &str) -> Result<Vec<String>, &'static str> {
     let mut tokens = Vec::new();
     let mut current = String::new();
     let mut in_quotes = false;
